@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   Pressable,
   Keyboard,
+  Image
 } from "react-native";
 import styles from "./style";
 import { useFonts } from "expo-font";
@@ -28,54 +29,43 @@ export default function FORMLOGIN({ navigation }) {
       <Text style={styles.textEs}   
        onPress={() => navigation.navigate("FORMREGISTER")}
                
-      >Don't have an account?</Text>
+      >Nao tenho conta</Text>
 
       <Pressable onPress={Keyboard.dismiss}>
-        {/* <Text style={styles.label}>Email</Text> */}
+        <Text style={styles.label}>Email</Text>
         <TextInput
           style={styles.Input}
-          placeholder="Email"
+         
         />
 
-        {/* <Text style={styles.label}>Senha</Text> */}
+         <Text style={styles.label}>Senha</Text> 
         <TextInput
           style={styles.Input}
-          placeholder="Password"
+         
         />
 
         <Text style={styles.textEs}  
-                onPress={() => navigation.navigate("FORGOTPASSWORD")}
+           onPress={() => navigation.navigate("FORGOTPASSWORD")}
                
-        >Forgot Password?</Text>
+        >Esqueci Senha</Text>
 
         <TouchableOpacity style={styles.Button} 
          onPress={() => navigation.navigate("FEED")}
         >
-          <Text style={styles.ButtonText}>SIGN IN</Text>
+          <Text style={styles.ButtonText}>Entrar</Text>
         </TouchableOpacity>
-
-            {/* <View style={styles.EsqueceuContainer}>
-        
-               <Text style={styles.textEs}  
-                onPress={() => navigation.navigate("FORGOTPASSWORD")}
-               
-               >Forgot Password?</Text>
-            
-               <Text style={styles.textEs}   
-               onPress={() => navigation.navigate("FormRegister")}
-               
-               >Don't have an account?</Text>
-            
-            </View> */}
 
                <Text style={styles.textSign}   
                onPress={() => navigation.navigate("FORMREGISTER")}
                
-               >or sign in with</Text>
+               >Ou entrar com</Text>
 
         <TouchableOpacity style={styles.ButtonGoogle}>
 
-          <AntDesign name="google" size={28} color="white" style={styles.Icon} />
+           <Image     
+             source={require("../../assets/google.png")}
+             style = {styles.Icon}
+           />
           <Text style={styles.ButtonTextGoogle}>GOOGLE</Text>
         </TouchableOpacity>
       </Pressable>

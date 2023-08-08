@@ -3,44 +3,43 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
    container : {
-       height: '100%',
-      backgroundColor:"#B0BEC5",   
+      //  height: '100%',
+       backgroundColor:"#F5F5F5",   
    },
 
    texto: {
     fontFamily:"Lobster",
     fontSize: 32,
-    color:'#0F2B3F',
+    color:'#9C27B0',
     textAlign: "center",
     padding:15,
    },
 
    label: {
      fontSize: 18,
-     color:'#409092',
      fontWeight:'bold',
      marginLeft: 10,
      marginTop: 10,
    },
 
    Input: {
-    backgroundColor:'#E5E5E5',
-    height:'12%',
-    marginLeft: 10,
-    marginRight: 10,
-    marginTop:15,
-    borderRadius:10,
-    padding:15,
+      height:'9%',
+      marginLeft: 10,
+      marginRight: 10,
+      marginTop: 15,
+      borderRadius: 8,
+      borderColor:'#000000',
+      borderWidth: 1,
    },
 
    Input2: {
-    backgroundColor:'#E5E5E5',
-    height:'12%',
-    marginLeft: 10,
-    marginRight: 10,
-    marginTop:35,
-    borderRadius:10,
-    padding:15,
+    height:'9%',
+     marginLeft: 10,
+     marginRight: 10,
+     marginTop: 35,
+     borderRadius: 8,
+     borderColor:'#000000',
+     borderWidth: 1,
    },
 
    Button: {

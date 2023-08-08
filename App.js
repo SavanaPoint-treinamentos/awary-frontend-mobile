@@ -17,32 +17,39 @@ const App = () => {
       <Stack.Navigator headerShow="false">
         <Stack.Screen name="SPLASHSCREEN" component={SPLASHSCREEN}
          options={{
-          headerTitle:''
+          headerTitle:'',
+          headerStyle: {backgroundColor:'#00001E'}
          }}
         
         />
         <Stack.Screen name="Home" component={Home}
         
         options={{
-          headerTitle:''
+          headerTitle:'',
+          headerStyle: {backgroundColor:'#00001E'}
+          
+          
          }}
         
         /> 
         <Stack.Screen name="FORMLOGIN" component={FORMLOGIN}
          options={{
-          headerTitle:''
+          headerTitle:'',
+          headerStyle: {backgroundColor:'#F5F5F5'}
          }}
         
         /> 
         <Stack.Screen name="FORMREGISTER" component={FORMREGISTER}
          options={{
-          headerTitle:''
+          headerTitle:'',
+          headerStyle: {backgroundColor:'#F5F5F5'}
          }}
         
         /> 
         <Stack.Screen name="FORGOTPASSWORD" component={FORGOTPASSWORD} 
          options={{
-          headerTitle:''
+          headerTitle:'',
+          headerStyle: {backgroundColor:'#F5F5F5'}
          }}
         
         />

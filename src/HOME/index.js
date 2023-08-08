@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, TouchableOpacity} from 'react-native';
+import {Text, View, TouchableOpacity, Image} from 'react-native';
 import styles from './style';
 import { useFonts } from "expo-font";
 
@@ -15,12 +15,17 @@ export default function Home({navigation}){
     
    return(
    <View style = {styles.container}>
-        <Text style = {styles.texto}> Awary </Text>
-        <Text style = {styles.Welcome}> Welcome </Text>
+    {/* <Image
+      source = {require("../../assets/")}
+      style={styles.image}
+    
+    /> */}
+
+        <Text style = {styles.Welcome}> Bem-Vindo ao Awary </Text>
 
         <TouchableOpacity style = {styles.Button} 
           onPress={() => navigation.navigate("FORMLOGIN")}>
-           <Text style = {styles.ButtonText}>GET STARTED</Text>
+           <Text style = {styles.ButtonText}>Vamos la</Text>
         </TouchableOpacity>
     </View>
    )

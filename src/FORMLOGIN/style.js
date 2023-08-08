@@ -4,42 +4,42 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
    container : {
        height: '100%',
-       backgroundColor:"#B0BEC5"   
+       backgroundColor:"#F5F5F5",
+        
    },
 
    texto: {
     fontFamily:"Lobster",
     fontSize: 32,
-    color:'#0F2B3F',
+    color:'#9C27B0',
     textAlign: "center",
-    padding:10,
+    padding:5,
    },
 
    label: {
      fontSize: 18,
-     color:'#409092',
      fontWeight:'bold',
      marginLeft: 10,
      marginTop: 10,
    },
 
    Input: {
-     backgroundColor:'#E5E5E5',
-     height:'15%',
+     height:'12%',
      marginLeft: 10,
      marginRight: 10,
-     marginTop:15,
-     borderRadius:10,
-     padding:15,
+     marginTop: 15,
+     borderRadius: 8,
+     borderColor:'#000000',
+     borderWidth: 1,
+     padding: 15,
    },
 
    Button: {
-    backgroundColor: "#0F2B3F",
+    backgroundColor: "#9C27B0",
     marginLeft: 10,
     marginRight: 10,
-    height:'15%',
     marginTop: 25,
-    borderRadius:10,
+    borderRadius:9,
    },
 
    ButtonText: {
@@ -47,34 +47,38 @@ const styles = StyleSheet.create({
     lineHeight:70,
     color: '#ffffff',
     fontWeight:'bold',
-    fontSize:18,
+    fontSize:22,
    },
 
    ButtonGoogle: {
       display: "flex",
       flexDirection: "row",
-      backgroundColor: "#0F2B3F",
+      justifyContent:"center",
+      backgroundColor: "#ffffff",
       marginLeft: 10,
       marginRight: 10,
-      height:'15%',
       marginTop: 25,
-     borderRadius:10,
+      borderRadius:9,
+      borderColor:'#000000',
+      borderWidth: 1,
    
    },
 
    ButtonTextGoogle: {
-       color:"#ffffff",
+       color:"#777",
        fontWeight:'bold',
        fontSize:18,
        lineHeight:70,
        textAlign: "center",
-       marginLeft:35,
+       marginLeft:15,
    },
 
    Icon: {
-       lineHeight:70,
-       fontSize:32,
-       marginLeft:10,
+      width:'10%',
+      height: '50%',
+      marginTop:18,
+     
+      
    },
 
    EsqueceuContainer: {
@@ -88,10 +92,11 @@ const styles = StyleSheet.create({
    textEs: {
     fontSize: 16,
     borderBottomColor: "#5F0E66",
-    // borderBottomWidth:1,
     textAlign:"right",
     marginRight:10,
     marginTop:10,
+    // borderBottomWidth:1,
+    
 
    },
 

@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   Pressable,
   Keyboard,
+  ScrollView
 } from "react-native";
 import styles from "./style";
  import { useFonts } from "expo-font";
@@ -21,44 +22,45 @@ export default function FORMREGISTER({ navigation }) {
   }
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.texto}>Create an Account</Text>
+    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
+      <Text style={styles.texto}>Criar conta</Text>
 
       <Pressable onPress={Keyboard.dismiss}>
-        {/* <Text style={styles.label}>Email</Text> */}
+         <Text style={styles.label}>Escolha um nome de usuario</Text> 
         <TextInput
           style={styles.Input}
-          placeholder="Username"
         />
 
-        {/* <Text style={styles.label}>Password</Text> */}
+         <Text style={styles.label}>Email</Text> 
         <TextInput
           style={styles.Input}
-          placeholder="Email"
+         
         />
 
+      <Text style={styles.label}>Senha</Text> 
         <TextInput
           style={styles.Input}
-          placeholder="Senha"
+          
         />
 
        <View />
 
-
+       <Text style={styles.label}>Data Nascimento</Text>
         <TextInput
           style={styles.Input2}
-          placeholder="Data Nascimento"
-        />
+         
+   />
 
+      <Text style={styles.label}>Cidade</Text>
         <TextInput
-          style={styles.Input}
+          style={styles.Input2}
           placeholder="Cidade"
         />
 
 
 
         <TouchableOpacity style={styles.Button}>
-          <Text style={styles.ButtonText}>Create</Text>
+          <Text style={styles.ButtonText}>Criar</Text>
         </TouchableOpacity>
 
             {/* <View style={styles.EsqueceuContainer}>
@@ -70,6 +72,6 @@ export default function FORMREGISTER({ navigation }) {
             </View> */}
        
       </Pressable>
-    </View>
+    </ScrollView>
   );
 }
