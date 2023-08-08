@@ -26,7 +26,7 @@ export default function FORMLOGIN({ navigation }) {
       <Text style={styles.texto}>Awary</Text>
           
       <Text style={styles.textEs}   
-       onPress={() => navigation.navigate("FormRegister")}
+       onPress={() => navigation.navigate("FORMREGISTER")}
                
       >Don't have an account?</Text>
 
@@ -69,7 +69,7 @@ export default function FORMLOGIN({ navigation }) {
             </View> */}
 
                <Text style={styles.textSign}   
-               onPress={() => navigation.navigate("FormRegister")}
+               onPress={() => navigation.navigate("FORMREGISTER")}
                
                >or sign in with</Text>
 

@@ -19,7 +19,7 @@ export default function Home({navigation}){
         <Text style = {styles.Welcome}> Welcome </Text>
 
         <TouchableOpacity style = {styles.Button} 
-          onPress={() => navigation.navigate("FormLogin")}>
+          onPress={() => navigation.navigate("FORMLOGIN")}>
            <Text style = {styles.ButtonText}>GET STARTED</Text>
         </TouchableOpacity>
     </View>
