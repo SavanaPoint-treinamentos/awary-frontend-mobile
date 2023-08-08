@@ -6,19 +6,18 @@ import SplashScreen from 'react-native-splash-screen';
 
 const SPLASHSCREEN = ({ navigation }) => {
   useEffect(() => {
-    // Simula algum carregamento assíncrono
-    setTimeout(() => {
-    //   SplashScreen.hide();
-      navigation.replace('Home');
-    }, 2000); // Tempo de exibição da SplashScreen em milissegundos (2 segundos neste exemplo)
-  }, []);
+    // Simula algum carregamento assincrono
+    setTimeout(() => { 
+       navigation.replace('Home');
+    }, 2000); 
+   }, []);
 
   return (
     <View style={styles.container}>
       <Image
-        source={require('../../assets/Logopng.png')} // Substitua pelo caminho da sua imagem de SplashScreen
+        source={require('../../assets/Logopng.png')} 
          style={styles.image}
-        resizeMode="contain"
+        resizeMode="cover"
       />
     </View>
   );
@@ -32,8 +31,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   image: {
-    width: '80%',
-    height: '80%',
+    width: '100%',
+    height: '100%',
   },
 });
 

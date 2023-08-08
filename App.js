@@ -11,23 +11,41 @@ import SPLASHSCREEN from './src/SPLASHSCREEN'
 
 const Stack = createStackNavigator();
 
-const HomeStack = () => (
-  <Stack.Navigator>
-    {/* Adicione as telas desejadas no seu StackNavigator */}
-    { <Stack.Screen name="Home" component={Home} /> }
-    { <Stack.Screen name="FORMLOGIN" component={FORMLOGIN} /> }
-    { <Stack.Screen name="FORMREGISTER" component={FORMREGISTER} /> }
-    { <Stack.Screen name="FORGOTPASSWORD" component={FORGOTPASSWORD} /> }
-    
-  </Stack.Navigator>
-);
-
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator headerMode="none">
-        <Stack.Screen name="SPLASHSCREEN" component={SPLASHSCREEN} />
-        <Stack.Screen name="Home" component={HomeStack} />
+      <Stack.Navigator headerShow="false">
+        <Stack.Screen name="SPLASHSCREEN" component={SPLASHSCREEN}
+         options={{
+          headerTitle:''
+         }}
+        
+        />
+        <Stack.Screen name="Home" component={Home}
+        
+        options={{
+          headerTitle:''
+         }}
+        
+        /> 
+        <Stack.Screen name="FORMLOGIN" component={FORMLOGIN}
+         options={{
+          headerTitle:''
+         }}
+        
+        /> 
+        <Stack.Screen name="FORMREGISTER" component={FORMREGISTER}
+         options={{
+          headerTitle:''
+         }}
+        
+        /> 
+        <Stack.Screen name="FORGOTPASSWORD" component={FORGOTPASSWORD} 
+         options={{
+          headerTitle:''
+         }}
+        
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
