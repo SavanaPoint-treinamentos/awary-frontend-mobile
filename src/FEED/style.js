@@ -3,8 +3,13 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
    container : {
-       height: '100%',
-       marginTop: 10,   
+        flex:1      
+   },
+
+   containerLogout: {
+      position:"absolute",
+      right:5,
+      top: 10,
    },
 
    texto: {
@@ -22,9 +27,10 @@ const styles = StyleSheet.create({
    },
 
    Feed: {
-       marginTop:10,
        display:"flex",
        flexDirection: "row",
+       paddingVertical:25 ,
+       marginTop:30  
    },
 
    imagem: {
@@ -36,8 +42,7 @@ const styles = StyleSheet.create({
    },
 
    imagemPost: {
-   width: '98%',
-   height:'70%',
+
    marginTop:15,
    marginLeft:3,
    marginRight:3,
@@ -69,16 +74,91 @@ const styles = StyleSheet.create({
     color:'#0F2B3F',
     marginLeft:5,
    },
+
+  perfilDateContainer : {
+     display:"flex",
+     flexDirection:"column"
+  },
+
+  perfilDate:{
+    marginLeft:5,
+  },
   
    moreMenu:{
      marginTop:10,
    },
 
    Comentarios: {
-    backgroundColor:"#D9D9D9"
+   display:"flex",
+   flexDirection:"row"
+   },
+
+   ComentariosComent: {
+     marginLeft:20,
+     marginTop:3
+   },
+
+   comentarioMenssage: {
+    marginTop:3,
+    display:"flex",
+    flexDirection:"row",
+    marginLeft:20,
+
+   },
+
+   commentContainer: {
+    flex:1,
+    display:"flex",
+    flexDirection:"row",
+    flexWrap:"wrap",
+   },
+
+   commenterImage: {
+     width:30,
+     height:30,
+     borderRadius:50,
+     marginTop:30,
+     marginLeft:5,
+   },
+
+   commentContent: {
+     marginLeft:20,
+     marginRight:10,
+     backgroundColor:"lightgray",
+     paddingHorizontal:20,
+     paddingVertical:10,
+     borderRadius:10,
+     marginTop:15,
+   },
+
+   commentOptions: {
+    marginTop:10,
+     display: "flex",
+     backgroundColor:"gray",
+     marginLeft:20
+   },
+
+   commentOptionsButton: {
+     display: "flex",
+     flexDirection:"row",
+     color:"#ffffff",
+     marginVertical:10
+   },
+
+   comentText: {
+     color: "#ffffff",
+     marginLeft:10,
+    
+   },
+
+   commenterName: {
+    fontWeight:"bold",
+    fontSize:16
+   },
+
+   commentText: {
+    flexWrap:"wrap",
    }
-
-
 
 })
 

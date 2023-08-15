@@ -4,9 +4,9 @@ import {
   View,
   TextInput,
   TouchableOpacity,
-  Pressable,
-  Keyboard,
-  ScrollView
+  ScrollView,
+  KeyboardAvoidingView,
+  Platform
 } from "react-native";
 import styles from "./style";
  import { useFonts } from "expo-font";
@@ -22,10 +22,12 @@ export default function FORMREGISTER({ navigation }) {
   }
 
   return (
-    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      <Text style={styles.texto}>Criar conta</Text>
+   
+    <ScrollView style = {styles.container} showsVerticalScrollIndicator={false} >
+    
+        <Text style={styles.texto}>Criar conta</Text> 
 
-      <Pressable onPress={Keyboard.dismiss}>
+      <KeyboardAvoidingView behavior= {Platform.OS == "ios" ? "padding" : "position"}> 
          <Text style={styles.label}>Escolha um nome de usuario</Text> 
         <TextInput
           style={styles.Input}
@@ -33,8 +35,7 @@ export default function FORMREGISTER({ navigation }) {
 
          <Text style={styles.label}>Email</Text> 
         <TextInput
-          style={styles.Input}
-         
+          style={styles.Input} 
         />
 
       <Text style={styles.label}>Senha</Text> 
@@ -43,35 +44,25 @@ export default function FORMREGISTER({ navigation }) {
           
         />
 
-       <View />
-
        <Text style={styles.label}>Data Nascimento</Text>
         <TextInput
-          style={styles.Input2}
-         
+          style={styles.Input2}    
    />
 
       <Text style={styles.label}>Cidade</Text>
         <TextInput
           style={styles.Input2}
-          placeholder="Cidade"
         />
-
-
 
         <TouchableOpacity style={styles.Button}>
           <Text style={styles.ButtonText}>Criar</Text>
-        </TouchableOpacity>
-
-            {/* <View style={styles.EsqueceuContainer}>
-               <Text style={styles.textEs}   
-               onPress={() => navigation.navigate("FormLogin")}
-               
-               >Login? Click here</Text>
-            
-            </View> */}
+        </TouchableOpacity>    
        
-      </Pressable>
+       </KeyboardAvoidingView> 
+
+       <View/> 
     </ScrollView>
+   
+   
   );
 }

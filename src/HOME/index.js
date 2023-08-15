@@ -15,11 +15,11 @@ export default function Home({navigation}){
     
    return(
    <View style = {styles.container}>
-    {/* <Image
-      source = {require("../../assets/")}
+     <Image
+      source = {require("../../assets/Union.png")}
       style={styles.image}
     
-    /> */}
+    /> 
 
         <Text style = {styles.Welcome}> Bem-Vindo ao Awary </Text>
 

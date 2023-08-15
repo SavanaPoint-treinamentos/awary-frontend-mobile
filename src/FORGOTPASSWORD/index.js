@@ -22,32 +22,32 @@ export default function FORGOTPASSWORD({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.texto}>Reset Password</Text>
+      <Text style={styles.texto}>Alterar Senha</Text>
 
       <Pressable onPress={Keyboard.dismiss}>
-        <Text style={styles.label}>New Password</Text>
+        <Text style={styles.label}>Nova Senha</Text>
         <TextInput
           style={styles.Input}
-          placeholder="Enter you new Password"
+          placeholder="Digite uma nova senha"
         />
 
-        <Text style={styles.label}>Confirm Password</Text>
+        <Text style={styles.label}>Confirmar Senha</Text>
         <TextInput
           style={styles.Input}
-          placeholder="Enter the same Password"
+          placeholder="Confirme a sua senha"
         />
 
         <TouchableOpacity style={styles.Button}>
-          <Text style={styles.ButtonText}>Reset Password</Text>
+          <Text style={styles.ButtonText}>Alterar Senha</Text>
         </TouchableOpacity>
 
-            <View style={styles.EsqueceuContainer}>
-               <Text style={styles.textEs}   
-               onPress={() => navigation.navigate("FormLogin")}
-               
-               >Login? Click here</Text>
-            
-            </View>
+        <TouchableOpacity style={styles.ButtonCancelar} 
+         onPress={() => navigation.navigate("FORMLOGIN")}
+        >
+          <Text style={styles.ButtonTextCancelar}>Cancelar</Text>
+        </TouchableOpacity>
+
+           
        
       </Pressable>
     </View>

@@ -3,8 +3,12 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
    container : {
-      //  height: '100%',
+       flex:1,
        backgroundColor:"#F5F5F5",   
+   },
+
+   scroll: {
+         padding:10,
    },
 
    texto: {
@@ -23,7 +27,7 @@ const styles = StyleSheet.create({
    },
 
    Input: {
-      height:'9%',
+      height:60,
       marginLeft: 10,
       marginRight: 10,
       marginTop: 15,
@@ -33,22 +37,23 @@ const styles = StyleSheet.create({
    },
 
    Input2: {
-    height:'9%',
+     height:60,
      marginLeft: 10,
      marginRight: 10,
-     marginTop: 35,
+     marginTop: 20,
      borderRadius: 8,
      borderColor:'#000000',
      borderWidth: 1,
    },
 
    Button: {
-    backgroundColor: "#0F2B3F",
-    marginLeft: 130,
+    backgroundColor: "#9C27B0",
+    marginLeft: 10,
     marginRight: 10,
-    height:'12%',
+    height: 60,
     marginTop: 25,
     borderRadius:10,
+    marginBottom:40
    },
 
    ButtonText: {
@@ -57,22 +62,7 @@ const styles = StyleSheet.create({
     color: '#ffffff',
     fontWeight:'bold',
     fontSize:18,
-   },
-
-   EsqueceuContainer: {
-    display: "flex",
-    flexDirection: "row",
-    marginTop:10,
-    marginLeft:20,
-   },
-
-   textEs: {
-    fontSize: 16,
-    borderBottomColor: "#409092",
-    borderBottomWidth:1,
    }
-
-
 
 })
 

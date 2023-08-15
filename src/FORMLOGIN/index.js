@@ -50,13 +50,13 @@ export default function FORMLOGIN({ navigation }) {
         >Esqueci Senha</Text>
 
         <TouchableOpacity style={styles.Button} 
-         onPress={() => navigation.navigate("FEED")}
+         onPress={() => navigation.navigate("TAB")}
         >
           <Text style={styles.ButtonText}>Entrar</Text>
         </TouchableOpacity>
 
                <Text style={styles.textSign}   
-               onPress={() => navigation.navigate("FORMREGISTER")}
+               
                
                >Ou entrar com</Text>
 

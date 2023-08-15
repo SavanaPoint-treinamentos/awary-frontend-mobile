@@ -6,14 +6,16 @@ const styles = StyleSheet.create({
        fontFamily:"Lobster",
        backgroundColor:"#00001E",
        height: '100%',
-       justifyContent: "center",
+       flex:1,
+       
+      //  justifyContent: "center",
        alignItems: "center",
   
    },
 
    texto: {
     fontFamily:"Lobster",
-    fontSize: 80,
+    fontSize: 60,
     color: "#ffffff",
     marginTop:-100,
    },
@@ -22,7 +24,7 @@ const styles = StyleSheet.create({
     fontFamily:"Lobster",
     fontSize: 30,
     color: "#ffffff",
-    marginTop:-20,
+    marginTop:30,
    },
 
    Button: {
@@ -45,8 +47,10 @@ const styles = StyleSheet.create({
    },
 
    image: {
-      width: '50%',
-      height:'70%',
+      marginTop:40,
+      width: '60%',
+      height:'35%',
+      
    }
 
 

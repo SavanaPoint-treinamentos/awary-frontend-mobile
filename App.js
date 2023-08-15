@@ -8,6 +8,9 @@ import FORMLOGIN from './src/FORMLOGIN'
 import FORMREGISTER from './src/FORMREGISTER'
 import FORGOTPASSWORD from './src/FORGOTPASSWORD'
 import SPLASHSCREEN from './src/SPLASHSCREEN'
+import FEED from './src/FEED'
+import TAB from './src/TAB'
+import MYPROFILE from './src/MYPROFILE'
 
 const Stack = createStackNavigator();
 
@@ -27,7 +30,6 @@ const App = () => {
         options={{
           headerTitle:'',
           headerStyle: {backgroundColor:'#00001E'}
-          
           
          }}
         
@@ -53,6 +55,30 @@ const App = () => {
          }}
         
         />
+
+        <Stack.Screen name="FEED" component={FEED} 
+         options={{
+          headerTitle:'',
+          headerStyle: {backgroundColor:'#F5F5F5'}
+         }}  
+        />
+
+        <Stack.Screen name="TAB" component={TAB} 
+         options={{
+            headerTitle:'',
+           headerStyle: {backgroundColor:'#D9D9D9'}
+          
+         }}
+          
+        /> 
+
+        <Stack.Screen name="MYPROFILE" component={MYPROFILE} 
+         options={{
+            headerTitle:'',
+          //  headerStyle: {backgroundColor:'#D9D9D9'}
+         }}
+        
+        /> 
       </Stack.Navigator>
     </NavigationContainer>
   );
