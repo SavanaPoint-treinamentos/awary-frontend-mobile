@@ -16,6 +16,8 @@ export default function FEED ({ navigation }) {
   const [inputVisible, setInputVisible] = useState(false);
   const [comments, setComments] = useState([]); // estado dos comentarios
   const [selectedComment, setSelectedComment] = useState(null);
+  const [selectedCommentIndex, setSelectedCommentIndex] = useState(null); // rastrear o índice do comentário selecionado
+
 
 
   const handleInputToggle = () => {
@@ -144,11 +146,14 @@ export default function FEED ({ navigation }) {
     </View>
 
 
-{comments.map((comment) => (
+    {comments.map((comment, index) => (
           <TouchableOpacity
             key={comment.id}
             style={styles.commentContainer}
-            onPress={() => setSelectedComment(comment)}
+            onPress={() => {
+              setSelectedComment(comment);
+              setSelectedCommentIndex(index);
+            }}
           >
             <Image
               source={require("../../assets/im2.jpg")}
@@ -162,7 +167,10 @@ export default function FEED ({ navigation }) {
         ))}
 
    {selectedComment && (
-          <View style={styles.commentOptions}>
+          <View style={[
+            styles.commentOptions,
+            selectedCommentIndex !== null && { top: 50 * selectedCommentIndex },
+          ]}>
             <TouchableOpacity
             style={styles.commentOptionsButton}
               onPress={() => {
