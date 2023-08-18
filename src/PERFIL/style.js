@@ -11,8 +11,7 @@ const styles = StyleSheet.create({
     height: 120,
     borderRadius: 70,
     justifyContent:"center",
-    marginTop:20
-  
+    marginTop:10 
 },
 
 myCamera: {
@@ -26,7 +25,7 @@ myCamera: {
 Inputs: {
   flex:1,
   alignItems:"center",
-  marginTop:-20,
+  marginTop:-40,
 },
 
 InputInterno: {
@@ -48,23 +47,39 @@ InputContainer: {
 },
 
 button: {
-  backgroundColor: "#9C27B0",
-  padding:1,
   width:'40%',
   marginLeft:'auto',
   marginRight:'auto',
   borderRadius:10,
   position:"absolute",
-  bottom:50,
+  bottom:90,
   right:15,
+  borderWidth:1
+},
+
+buttonPost: {
+  backgroundColor: "#9C27B0",
+  width:'90%',
+  marginLeft:10,
+  marginRight:10,
+  borderRadius:10,
+  position:"absolute",
+  bottom:20
 },
 
 buttonText: {
   textAlign: "center",
   lineHeight:60,
-  color: '#ffffff',
   fontWeight:'bold',
   fontSize:18,
+},
+
+buttonTextPost: {
+  textAlign: "center",
+  lineHeight:60,
+  fontWeight:'bold',
+  fontSize:18,
+  color:"#ffffff"
 }
 
 })

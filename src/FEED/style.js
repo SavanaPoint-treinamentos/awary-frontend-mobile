@@ -84,9 +84,7 @@ const styles = StyleSheet.create({
     marginLeft:5,
   },
   
-   moreMenu:{
-     marginTop:10,
-   },
+
 
    Comentarios: {
    display:"flex",

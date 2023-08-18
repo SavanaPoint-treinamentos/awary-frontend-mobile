@@ -58,6 +58,11 @@ export default function PERFIL ({navigation}){
 
         <TouchableOpacity style = {styles.button} >
           <Text style = {styles.buttonText} >Salvar</Text>
+       </TouchableOpacity>
+
+      <TouchableOpacity style = {styles.buttonPost} >
+          <Text style = {styles.buttonTextPost}
+           onPress={() => navigation.navigate("POST")}>Novo Post</Text>
       </TouchableOpacity>
    </View>
 

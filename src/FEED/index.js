@@ -108,10 +108,6 @@ export default function FEED ({ navigation }) {
 
         </View>
 
-        <View style = {styles.moreMenu}>
-            <Feather name="more-vertical" size={24} color="black" />
-        </View>
-
       </View>
 
       <View>
